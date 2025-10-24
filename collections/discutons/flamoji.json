@@ -3,5 +3,40 @@
     "title": "3headedmonkey",
     "text_to_replace": ":3headedmonkey:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/3headedmonkey.jpeg"
+  },
+  "1": {
+    "title": "bananedeouf",
+    "text_to_replace": ":bananedeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/bananedeouf.gif"
+  },
+  "2": {
+    "title": "chatondeouf",
+    "text_to_replace": ":chatondeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/chatondeouf.gif"
+  },
+  "3": {
+    "title": "choucroutedeouf",
+    "text_to_replace": ":choucroutedeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/choucroutedeouf.gif"
+  },
+  "4": {
+    "title": "femmedeouf",
+    "text_to_replace": ":femmedeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/femmedeouf.gif"
+  },
+  "5": {
+    "title": "herisson",
+    "text_to_replace": ":herisson:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/herisson.png"
+  },
+  "6": {
+    "title": "racooon",
+    "text_to_replace": ":racooon:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/racooon.gif"
+  },
+  "7": {
+    "title": "saucissedeouf",
+    "text_to_replace": ":saucissedeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/saucissedeouf.gif"
   }
 }
