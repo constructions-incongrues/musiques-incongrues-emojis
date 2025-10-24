@@ -1,0 +1,32 @@
+{
+  "0": {
+    "title": "Zooincongru : zooincongru1",
+    "text_to_replace": ":zooincongru1:",
+    "path": "https://emojis.musiques-incongrues.net/collections/zooincongru/zooincongru1.gif"
+  },
+  "1": {
+    "title": "Zooincongru : zooincongru2",
+    "text_to_replace": ":zooincongru2:",
+    "path": "https://emojis.musiques-incongrues.net/collections/zooincongru/zooincongru2.png"
+  },
+  "2": {
+    "title": "Zooincongru : zooincongru3",
+    "text_to_replace": ":zooincongru3:",
+    "path": "https://emojis.musiques-incongrues.net/collections/zooincongru/zooincongru3.png"
+  },
+  "3": {
+    "title": "Zooincongru : zooincongru4",
+    "text_to_replace": ":zooincongru4:",
+    "path": "https://emojis.musiques-incongrues.net/collections/zooincongru/zooincongru4.png"
+  },
+  "4": {
+    "title": "Zooincongru : zooincongru5",
+    "text_to_replace": ":zooincongru5:",
+    "path": "https://emojis.musiques-incongrues.net/collections/zooincongru/zooincongru5.png"
+  },
+  "5": {
+    "title": "Zooincongru : zooincongru6",
+    "text_to_replace": ":zooincongru6:",
+    "path": "https://emojis.musiques-incongrues.net/collections/zooincongru/zooincongru6.png"
+  }
+}
