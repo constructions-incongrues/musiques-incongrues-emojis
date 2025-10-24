@@ -68,12 +68,12 @@ Chaque fichier `flamoji.json` suit le format :
 ```json
 {
   "0": {
-    "title": "emoji1",
+    "title": "collection-name_emoji1",
     "text_to_replace": ":collection-name_emoji1:",
     "path": "/assets/emojis/collection-name/emoji1.png"
   },
   "1": {
-    "title": "emoji2",
+    "title": "collection-name_emoji2",
     "text_to_replace": ":collection-name_emoji2:",
     "path": "/assets/emojis/collection-name/emoji2.gif"
   }

@@ -49,13 +49,11 @@ def create_title(collection_name: str, emoji_filename: str) -> str:
         emoji_filename: Nom du fichier (avec extension)
 
     Returns:
-        Titre formaté
+        Titre formaté avec collection_name_filename
     """
     # Retire l'extension du fichier
     name = Path(emoji_filename).stem
-    # Capitalise le nom de la collection
-    collection_title = collection_name.capitalize()
-    return f"{name}"
+    return f"{collection_name}_{name}"
 
 
 def generate_flamoji_json(collection_name: str, collection_path: Path, base_url: str = "/assets/emojis") -> Dict:
