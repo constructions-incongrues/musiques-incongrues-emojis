@@ -94,15 +94,3 @@ emojis:
 - name: emoji2
   src: /assets/emojis/collection-name/emoji2.gif
 ```
-
-## Importation dans RocketChat
-
-Pour importer les collections d'emojis dans RocketChat, vous pouvez utiliser l'outil [rocketchat-emoji-bulk-upload](https://github.com/anefzaoui/rocketchat-emoji-bulk-upload) qui permet d'importer des fichiers au format emojipacks.
-
-```bash
-# Exemple d'importation d'une collection
-rocketchat-emoji-bulk-upload \
-  --url https://your-rocketchat-instance.com \
-  --token your-auth-token \
-  --file collections/collection-name/rocketchat.yaml
-```
