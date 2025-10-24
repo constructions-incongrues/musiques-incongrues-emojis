@@ -1,0 +1,32 @@
+{
+  "0": {
+    "title": "confused",
+    "text_to_replace": ":confused:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/confused.png"
+  },
+  "1": {
+    "title": "heart",
+    "text_to_replace": ":heart:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/heart.png"
+  },
+  "2": {
+    "title": "laughing",
+    "text_to_replace": ":laughing:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/laughing.png"
+  },
+  "3": {
+    "title": "tada",
+    "text_to_replace": ":tada:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/tada.png"
+  },
+  "4": {
+    "title": "thumbsdown",
+    "text_to_replace": ":thumbsdown:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/thumbsdown.png"
+  },
+  "5": {
+    "title": "thumbsup",
+    "text_to_replace": ":thumbsup:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/thumbsup.png"
+  }
+}
