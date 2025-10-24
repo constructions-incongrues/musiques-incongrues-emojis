@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Génère des fichiers JSON flamoji pour chaque collection d'emojis.
-Format basé sur https://github.com/zerosonesfun/BittyKitty/blob/main/dist/icons/flamoji/flamoji.json
+Génère des fichiers JSON flamoji et YAML RocketChat pour chaque collection d'emojis.
+Format JSON basé sur https://github.com/zerosonesfun/BittyKitty/blob/main/dist/icons/flamoji/flamoji.json
+Format YAML basé sur https://github.com/lambtron/emojipacks
 """
 
 import argparse
@@ -9,6 +10,7 @@ import json
 import os
 from pathlib import Path
 from typing import Dict, List
+import yaml
 
 
 def get_collections_dir() -> Path:
@@ -82,11 +84,40 @@ def generate_flamoji_json(collection_name: str, collection_path: Path, base_url:
     return flamoji_data
 
 
+def generate_rocketchat_yaml(collection_name: str, collection_path: Path, base_url: str = "/assets/emojis") -> Dict:
+    """Génère le contenu YAML RocketChat pour une collection.
+
+    Args:
+        collection_name: Nom de la collection
+        collection_path: Chemin vers la collection
+        base_url: URL de base pour les paths (par défaut: /assets/emojis)
+
+    Returns:
+        Dictionnaire au format emojipacks pour RocketChat
+    """
+    emoji_files = get_emoji_files(collection_path)
+    emojis = []
+
+    for emoji_file in emoji_files:
+        filename = emoji_file.name
+        name = Path(filename).stem
+
+        emojis.append({
+            "name": name,
+            "src": f"{base_url}/{collection_name}/{filename}"
+        })
+
+    return {
+        "title": collection_name,
+        "emojis": emojis
+    }
+
+
 def main():
     """Fonction principale."""
     # Parser les arguments
     parser = argparse.ArgumentParser(
-        description="Génère des fichiers JSON flamoji pour chaque collection d'emojis"
+        description="Génère des fichiers JSON flamoji et YAML RocketChat pour chaque collection d'emojis"
     )
     parser.add_argument(
         "--base-url",
@@ -119,13 +150,23 @@ def main():
             continue
 
         # Sauvegarder le fichier JSON dans le dossier de la collection
-        output_file = collection_path / "flamoji.json"
-        with open(output_file, "w", encoding="utf-8") as f:
+        json_output_file = collection_path / "flamoji.json"
+        with open(json_output_file, "w", encoding="utf-8") as f:
             json.dump(flamoji_data, f, indent=2, ensure_ascii=False)
 
-        print(f"  ✓ Généré: {output_file} ({len(flamoji_data)} emojis)")
+        print(f"  ✓ Généré: {json_output_file} ({len(flamoji_data)} emojis)")
 
-    print(f"\n✓ Fichiers générés dans chaque collection")
+        # Générer le YAML RocketChat
+        rocketchat_data = generate_rocketchat_yaml(collection_name, collection_path, args.base_url)
+
+        # Sauvegarder le fichier YAML dans le dossier de la collection
+        yaml_output_file = collection_path / "rocketchat.yaml"
+        with open(yaml_output_file, "w", encoding="utf-8") as f:
+            yaml.dump(rocketchat_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+        print(f"  ✓ Généré: {yaml_output_file} ({len(rocketchat_data['emojis'])} emojis)")
+
+    print(f"\n✓ Fichiers JSON et YAML générés dans chaque collection")
 
 
 if __name__ == "__main__":

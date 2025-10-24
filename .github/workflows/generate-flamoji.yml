@@ -1,4 +1,4 @@
-name: Generate Flamoji JSON
+name: Generate Flamoji JSON and RocketChat YAML
 
 on:
   push:
@@ -22,7 +22,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Generate flamoji JSON files
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generate flamoji JSON and RocketChat YAML files
         run: |
           python3 generate_flamoji.py --base-url "$BASE_URL"
 
@@ -30,6 +34,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add collections/*/flamoji.json
-          git commit -m "Update flamoji.json files"
+          git add collections/*/flamoji.json collections/*/rocketchat.yaml
+          git commit -m "Update flamoji.json and rocketchat.yaml files"
           git push

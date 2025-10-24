@@ -1,6 +1,6 @@
 # Musiques Incongrues Emojis
 
-Générateur de fichiers JSON flamoji pour collections d'emojis personnalisés.
+Générateur de fichiers JSON flamoji et YAML RocketChat pour collections d'emojis personnalisés.
 
 ## Structure
 
@@ -10,12 +10,19 @@ emojis/
     collection-name/
       emoji1.png
       emoji2.gif
-      flamoji.json  (généré automatiquement)
+      flamoji.json       (généré automatiquement)
+      rocketchat.yaml    (généré automatiquement)
 ```
 
 ## Utilisation locale
 
-### Générer les fichiers JSON
+### Prérequis
+
+```bash
+pip install -r requirements.txt
+```
+
+### Générer les fichiers JSON et YAML
 
 ```bash
 # Avec l'URL de base par défaut (/assets/emojis)
@@ -24,6 +31,10 @@ python3 generate_flamoji.py
 # Avec une URL de base personnalisée
 python3 generate_flamoji.py --base-url "https://example.com/emojis"
 ```
+
+Le script génère automatiquement deux fichiers pour chaque collection :
+- `flamoji.json` - Format pour Flamoji
+- `rocketchat.yaml` - Format compatible avec RocketChat/emojipacks
 
 ### Formats supportés
 
@@ -34,7 +45,7 @@ Le script supporte les formats d'images suivants :
 
 ## Configuration GitHub Actions
 
-Le workflow génère automatiquement les fichiers `flamoji.json` à chaque push sur la branche `main`.
+Le workflow génère automatiquement les fichiers `flamoji.json` et `rocketchat.yaml` à chaque push sur la branche `main`.
 
 ### Configurer l'URL de base
 
@@ -46,21 +57,23 @@ Si la variable n'est pas définie, l'URL par défaut `/assets/emojis` sera utili
 
 ### Déclencher manuellement
 
-Le workflow peut aussi être déclenché manuellement depuis l'onglet **Actions** → **Generate Flamoji JSON** → **Run workflow**.
+Le workflow peut aussi être déclenché manuellement depuis l'onglet **Actions** → **Generate Flamoji JSON and RocketChat YAML** → **Run workflow**.
 
-## Format du JSON généré
+## Formats générés
+
+### Format JSON (flamoji.json)
 
 Chaque fichier `flamoji.json` suit le format :
 
 ```json
 {
   "0": {
-    "title": "Collection emoji1",
+    "title": "emoji1",
     "text_to_replace": ":emoji1:",
     "path": "/assets/emojis/collection-name/emoji1.png"
   },
   "1": {
-    "title": "Collection emoji2",
+    "title": "emoji2",
     "text_to_replace": ":emoji2:",
     "path": "/assets/emojis/collection-name/emoji2.gif"
   }
@@ -68,3 +81,28 @@ Chaque fichier `flamoji.json` suit le format :
 ```
 
 Format basé sur [BittyKitty flamoji](https://github.com/zerosonesfun/BittyKitty/blob/main/dist/icons/flamoji/flamoji.json).
+
+### Format YAML (rocketchat.yaml)
+
+Chaque fichier `rocketchat.yaml` suit le format [emojipacks](https://github.com/lambtron/emojipacks) :
+
+```yaml
+title: collection-name
+emojis:
+- name: emoji1
+  src: /assets/emojis/collection-name/emoji1.png
+- name: emoji2
+  src: /assets/emojis/collection-name/emoji2.gif
+```
+
+## Importation dans RocketChat
+
+Pour importer les collections d'emojis dans RocketChat, vous pouvez utiliser l'outil [rocketchat-emoji-bulk-upload](https://github.com/anefzaoui/rocketchat-emoji-bulk-upload) qui permet d'importer des fichiers au format emojipacks.
+
+```bash
+# Exemple d'importation d'une collection
+rocketchat-emoji-bulk-upload \
+  --url https://your-rocketchat-instance.com \
+  --token your-auth-token \
+  --file collections/collection-name/rocketchat.yaml
+```
