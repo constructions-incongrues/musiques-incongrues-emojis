@@ -98,7 +98,7 @@ def generate_rocketchat_yaml(collection_name: str, collection_path: Path, base_u
 
     for emoji_file in emoji_files:
         filename = emoji_file.name
-        name = Path(filename).stem
+        name = f"{collection_name}_{Path(filename).stem}"
 
         emojis.append({
             "name": name,
