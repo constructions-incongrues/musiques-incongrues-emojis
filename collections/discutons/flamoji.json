@@ -5,36 +5,96 @@
     "path": "https://emo.musiques-incongrues.net/collections/discutons/3headedmonkey.jpeg"
   },
   "1": {
+    "title": "discutons_3headedmonkeydance",
+    "text_to_replace": ":discutons_3headedmonkeydance:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/3headedmonkeydance.jpeg"
+  },
+  "2": {
+    "title": "discutons_8bitheart",
+    "text_to_replace": ":discutons_8bitheart:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/8bitheart.jpeg"
+  },
+  "3": {
+    "title": "discutons_Postemusique",
+    "text_to_replace": ":discutons_Postemusique:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/Postemusique.jpeg"
+  },
+  "4": {
     "title": "discutons_bananedeouf",
     "text_to_replace": ":discutons_bananedeouf:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/bananedeouf.gif"
   },
-  "2": {
+  "5": {
+    "title": "discutons_bluecat",
+    "text_to_replace": ":discutons_bluecat:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/bluecat.jpeg"
+  },
+  "6": {
+    "title": "discutons_cassette",
+    "text_to_replace": ":discutons_cassette:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/cassette.jpeg"
+  },
+  "7": {
     "title": "discutons_chatondeouf",
     "text_to_replace": ":discutons_chatondeouf:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/chatondeouf.gif"
   },
-  "3": {
+  "8": {
     "title": "discutons_choucroutedeouf",
     "text_to_replace": ":discutons_choucroutedeouf:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/choucroutedeouf.gif"
   },
-  "4": {
+  "9": {
+    "title": "discutons_crotte",
+    "text_to_replace": ":discutons_crotte:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/crotte.jpeg"
+  },
+  "10": {
+    "title": "discutons_dauphindeouf",
+    "text_to_replace": ":discutons_dauphindeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/dauphindeouf.jpeg"
+  },
+  "11": {
+    "title": "discutons_evil_laugh",
+    "text_to_replace": ":discutons_evil_laugh:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/evil_laugh.jpeg"
+  },
+  "12": {
     "title": "discutons_femmedeouf",
     "text_to_replace": ":discutons_femmedeouf:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/femmedeouf.gif"
   },
-  "5": {
+  "13": {
+    "title": "discutons_femmetoupiedeouf",
+    "text_to_replace": ":discutons_femmetoupiedeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/femmetoupiedeouf.jpeg"
+  },
+  "14": {
+    "title": "discutons_happy1",
+    "text_to_replace": ":discutons_happy1:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/happy1.jpeg"
+  },
+  "15": {
     "title": "discutons_herisson",
     "text_to_replace": ":discutons_herisson:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/herisson.png"
   },
-  "6": {
+  "16": {
+    "title": "discutons_pirouette",
+    "text_to_replace": ":discutons_pirouette:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/pirouette.jpeg"
+  },
+  "17": {
     "title": "discutons_racooon",
     "text_to_replace": ":discutons_racooon:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/racooon.gif"
   },
-  "7": {
+  "18": {
+    "title": "discutons_resterdigne",
+    "text_to_replace": ":discutons_resterdigne:",
+    "path": "https://emo.musiques-incongrues.net/collections/discutons/resterdigne.png"
+  },
+  "19": {
     "title": "discutons_saucissedeouf",
     "text_to_replace": ":discutons_saucissedeouf:",
     "path": "https://emo.musiques-incongrues.net/collections/discutons/saucissedeouf.gif"
