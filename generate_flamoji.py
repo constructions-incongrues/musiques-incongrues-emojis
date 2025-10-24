@@ -34,11 +34,11 @@ def create_shortcode(collection_name: str, emoji_filename: str) -> str:
         emoji_filename: Nom du fichier (avec extension)
 
     Returns:
-        Shortcode au format :filename:
+        Shortcode au format :collection-name_filename:
     """
     # Retire l'extension du fichier
     name = Path(emoji_filename).stem
-    return f":{name}:"
+    return f":{collection_name}_{name}:"
 
 
 def create_title(collection_name: str, emoji_filename: str) -> str:

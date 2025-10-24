@@ -1,62 +1,62 @@
 {
   "0": {
     "title": "grapp01",
-    "text_to_replace": ":grapp01:",
+    "text_to_replace": ":otro_grapp01:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/grapp01.gif"
   },
   "1": {
     "title": "grapp02",
-    "text_to_replace": ":grapp02:",
+    "text_to_replace": ":otro_grapp02:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/grapp02.gif"
   },
   "2": {
     "title": "grapp03",
-    "text_to_replace": ":grapp03:",
+    "text_to_replace": ":otro_grapp03:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/grapp03.gif"
   },
   "3": {
     "title": "grapp04",
-    "text_to_replace": ":grapp04:",
+    "text_to_replace": ":otro_grapp04:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/grapp04.gif"
   },
   "4": {
     "title": "grapp05",
-    "text_to_replace": ":grapp05:",
+    "text_to_replace": ":otro_grapp05:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/grapp05.gif"
   },
   "5": {
     "title": "grapp06",
-    "text_to_replace": ":grapp06:",
+    "text_to_replace": ":otro_grapp06:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/grapp06.gif"
   },
   "6": {
     "title": "pin01",
-    "text_to_replace": ":pin01:",
+    "text_to_replace": ":otro_pin01:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/pin01.gif"
   },
   "7": {
     "title": "pin02",
-    "text_to_replace": ":pin02:",
+    "text_to_replace": ":otro_pin02:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/pin02.gif"
   },
   "8": {
     "title": "pin03",
-    "text_to_replace": ":pin03:",
+    "text_to_replace": ":otro_pin03:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/pin03.gif"
   },
   "9": {
     "title": "pin04",
-    "text_to_replace": ":pin04:",
+    "text_to_replace": ":otro_pin04:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/pin04.gif"
   },
   "10": {
     "title": "pin05",
-    "text_to_replace": ":pin05:",
+    "text_to_replace": ":otro_pin05:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/pin05.gif"
   },
   "11": {
     "title": "pin06",
-    "text_to_replace": ":pin06:",
+    "text_to_replace": ":otro_pin06:",
     "path": "https://emo.musiques-incongrues.net/collections/otro/pin06.gif"
   }
 }
