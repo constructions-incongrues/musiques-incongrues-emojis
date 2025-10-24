@@ -1,32 +1,32 @@
 {
   "0": {
-    "title": "confused",
-    "text_to_replace": ":confused:",
-    "path": "https://emo.musiques-incongrues.net/collections/reactions/confused.png"
+    "title": "1f389",
+    "text_to_replace": ":1f389:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/1f389.png"
   },
   "1": {
-    "title": "heart",
-    "text_to_replace": ":heart:",
-    "path": "https://emo.musiques-incongrues.net/collections/reactions/heart.png"
+    "title": "1f44d",
+    "text_to_replace": ":1f44d:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/1f44d.png"
   },
   "2": {
-    "title": "laughing",
-    "text_to_replace": ":laughing:",
-    "path": "https://emo.musiques-incongrues.net/collections/reactions/laughing.png"
+    "title": "1f44e",
+    "text_to_replace": ":1f44e:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/1f44e.png"
   },
   "3": {
-    "title": "tada",
-    "text_to_replace": ":tada:",
-    "path": "https://emo.musiques-incongrues.net/collections/reactions/tada.png"
+    "title": "1f606",
+    "text_to_replace": ":1f606:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/1f606.png"
   },
   "4": {
-    "title": "thumbsdown",
-    "text_to_replace": ":thumbsdown:",
-    "path": "https://emo.musiques-incongrues.net/collections/reactions/thumbsdown.png"
+    "title": "1f615",
+    "text_to_replace": ":1f615:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/1f615.png"
   },
   "5": {
-    "title": "thumbsup",
-    "text_to_replace": ":thumbsup:",
-    "path": "https://emo.musiques-incongrues.net/collections/reactions/thumbsup.png"
+    "title": "2764",
+    "text_to_replace": ":2764:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/2764.png"
   }
 }
