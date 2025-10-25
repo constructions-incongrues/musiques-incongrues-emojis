@@ -1,32 +1,52 @@
 {
   "0": {
+    "title": "reactions_16",
+    "text_to_replace": ":reactions_16:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/16.png"
+  },
+  "1": {
+    "title": "reactions_192",
+    "text_to_replace": ":reactions_192:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/192.png"
+  },
+  "2": {
     "title": "reactions_1f389",
     "text_to_replace": ":reactions_1f389:",
     "path": "https://emo.musiques-incongrues.net/collections/reactions/1f389.png"
   },
-  "1": {
+  "3": {
+    "title": "reactions_1f44d-old",
+    "text_to_replace": ":reactions_1f44d-old:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/1f44d-old.png"
+  },
+  "4": {
     "title": "reactions_1f44d",
     "text_to_replace": ":reactions_1f44d:",
     "path": "https://emo.musiques-incongrues.net/collections/reactions/1f44d.png"
   },
-  "2": {
+  "5": {
     "title": "reactions_1f44e",
     "text_to_replace": ":reactions_1f44e:",
     "path": "https://emo.musiques-incongrues.net/collections/reactions/1f44e.png"
   },
-  "3": {
+  "6": {
     "title": "reactions_1f606",
     "text_to_replace": ":reactions_1f606:",
     "path": "https://emo.musiques-incongrues.net/collections/reactions/1f606.png"
   },
-  "4": {
+  "7": {
     "title": "reactions_1f615",
     "text_to_replace": ":reactions_1f615:",
     "path": "https://emo.musiques-incongrues.net/collections/reactions/1f615.png"
   },
-  "5": {
+  "8": {
     "title": "reactions_2764",
     "text_to_replace": ":reactions_2764:",
     "path": "https://emo.musiques-incongrues.net/collections/reactions/2764.png"
+  },
+  "9": {
+    "title": "reactions_48",
+    "text_to_replace": ":reactions_48:",
+    "path": "https://emo.musiques-incongrues.net/collections/reactions/48.png"
   }
 }

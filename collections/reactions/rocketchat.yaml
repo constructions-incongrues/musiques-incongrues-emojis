@@ -1,7 +1,13 @@
 title: reactions
 emojis:
+- name: reactions_16
+  src: https://emo.musiques-incongrues.net/collections/reactions/16.png
+- name: reactions_192
+  src: https://emo.musiques-incongrues.net/collections/reactions/192.png
 - name: reactions_1f389
   src: https://emo.musiques-incongrues.net/collections/reactions/1f389.png
+- name: reactions_1f44d-old
+  src: https://emo.musiques-incongrues.net/collections/reactions/1f44d-old.png
 - name: reactions_1f44d
   src: https://emo.musiques-incongrues.net/collections/reactions/1f44d.png
 - name: reactions_1f44e
@@ -12,3 +18,5 @@ emojis:
   src: https://emo.musiques-incongrues.net/collections/reactions/1f615.png
 - name: reactions_2764
   src: https://emo.musiques-incongrues.net/collections/reactions/2764.png
+- name: reactions_48
+  src: https://emo.musiques-incongrues.net/collections/reactions/48.png
