@@ -1,0 +1,47 @@
+{
+  "0": {
+    "title": "gargamelle_Postemusique",
+    "text_to_replace": ":gargamelle_Postemusique:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/Postemusique.jpeg"
+  },
+  "1": {
+    "title": "gargamelle_bluecat",
+    "text_to_replace": ":gargamelle_bluecat:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/bluecat.jpeg"
+  },
+  "2": {
+    "title": "gargamelle_cassette",
+    "text_to_replace": ":gargamelle_cassette:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/cassette.jpeg"
+  },
+  "3": {
+    "title": "gargamelle_chat-yeux",
+    "text_to_replace": ":gargamelle_chat-yeux:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/chat-yeux.jpeg"
+  },
+  "4": {
+    "title": "gargamelle_evil_laugh",
+    "text_to_replace": ":gargamelle_evil_laugh:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/evil_laugh.jpeg"
+  },
+  "5": {
+    "title": "gargamelle_hinhin",
+    "text_to_replace": ":gargamelle_hinhin:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/hinhin.jpeg"
+  },
+  "6": {
+    "title": "gargamelle_papi",
+    "text_to_replace": ":gargamelle_papi:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/papi.jpeg"
+  },
+  "7": {
+    "title": "gargamelle_yeahbaby",
+    "text_to_replace": ":gargamelle_yeahbaby:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/yeahbaby.jpeg"
+  },
+  "8": {
+    "title": "gargamelle_zakmac",
+    "text_to_replace": ":gargamelle_zakmac:",
+    "path": "https://emo.musiques-incongrues.net/collections/gargamelle/zakmac.png"
+  }
+}
