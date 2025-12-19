@@ -265,13 +265,6 @@
     </div>
 
     <script>
-        // Collections à charger
-        const collections = [
-            'amour', 'ballounes', 'boodlofi', 'boodme', 'discutons',
-            'gargamelle', 'geocities', 'millemilliards', 'n8n', 'otro', 'reactions',
-            'shoboshobo', 'sonsoftheananas', 'zooincongru'
-        ];
-
         let totalEmojis = 0;
 
         async function loadCollections() {
@@ -279,6 +272,30 @@
             container.innerHTML = '';
 
             let loadedCollections = 0;
+
+            // Charger la liste des collections depuis collections.json
+            let collections = [];
+            try {
+                const collectionsResponse = await fetch('collections.json');
+                if (collectionsResponse.ok) {
+                    collections = await collectionsResponse.json();
+                } else {
+                    // Fallback vers la liste statique si collections.json n'est pas disponible
+                    collections = [
+                        'amour', 'ballounes', 'boodlofi', 'boodme', 'discutons',
+                        'gargamelle', 'geocities', 'millemilliards', 'n8n', 'otro', 'reactions',
+                        'shoboshobo', 'sonsoftheananas', 'zooincongru'
+                    ];
+                }
+            } catch (error) {
+                console.error('Erreur lors du chargement de collections.json:', error);
+                // Fallback vers la liste statique
+                collections = [
+                    'amour', 'ballounes', 'boodlofi', 'boodme', 'discutons',
+                    'gargamelle', 'geocities', 'millemilliards', 'n8n', 'otro', 'reactions',
+                    'shoboshobo', 'sonsoftheananas', 'zooincongru'
+                ];
+            }
 
             for (const collectionName of collections) {
                 try {

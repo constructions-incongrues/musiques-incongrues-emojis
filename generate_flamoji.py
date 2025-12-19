@@ -132,6 +132,18 @@ def main():
 
     print(f"URL de base: {args.base_url}\n")
 
+    # Collecter tous les noms de collections
+    collection_names = []
+    for collection_path in sorted(collections_dir.iterdir()):
+        if collection_path.is_dir():
+            collection_names.append(collection_path.name)
+
+    # Générer le fichier collections.json
+    collections_json_path = Path(__file__).parent / "collections.json"
+    with open(collections_json_path, "w", encoding="utf-8") as f:
+        json.dump(collection_names, f, indent=2, ensure_ascii=False)
+    print(f"✓ Généré: {collections_json_path} ({len(collection_names)} collections)\n")
+
     # Parcourir chaque collection
     for collection_path in sorted(collections_dir.iterdir()):
         if not collection_path.is_dir():
