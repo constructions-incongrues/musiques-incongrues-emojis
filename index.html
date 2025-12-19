@@ -247,6 +247,10 @@
             </div>
         </header>
 
+        <div style="margin-bottom: 2rem; text-align: center;">
+            <input type="text" id="collection-search" placeholder="🔍 Rechercher une collection..." style="padding: 0.8rem 1.2rem; border: 2px solid #e9ecef; border-radius: 25px; font-size: 1rem; width: 100%; max-width: 400px; outline: none; transition: border-color 0.3s ease;" oninput="filterCollections()" onfocus="this.style.borderColor='#e600e6'" onblur="this.style.borderColor='#e9ecef'">
+        </div>
+
         <div id="collections-container">
             <div class="loading">Chargement des collections...</div>
         </div>
@@ -389,6 +393,20 @@
                 }, 2000);
             }).catch(err => {
                 console.error('Erreur lors de la copie:', err);
+            });
+        }
+
+        function filterCollections() {
+            const searchTerm = document.getElementById('collection-search').value.toLowerCase();
+            const collections = document.querySelectorAll('.collection');
+
+            collections.forEach(collection => {
+                const collectionName = collection.id.toLowerCase();
+                if (collectionName.includes(searchTerm)) {
+                    collection.style.display = 'block';
+                } else {
+                    collection.style.display = 'none';
+                }
             });
         }
 
