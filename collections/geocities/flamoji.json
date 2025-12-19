@@ -1,12 +1,27 @@
 {
   "0": {
-    "title": "geocties_chienboule",
-    "text_to_replace": ":geocties_chienboule:",
-    "path": "https://emo.musiques-incongrues.net/collections/geocties/chienboule.gif"
+    "title": "geocities_carottedeouf",
+    "text_to_replace": ":geocities_carottedeouf:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocities/carottedeouf.gif"
   },
   "1": {
-    "title": "geocties_tartealatete",
-    "text_to_replace": ":geocties_tartealatete:",
-    "path": "https://emo.musiques-incongrues.net/collections/geocties/tartealatete.gif"
+    "title": "geocities_chienboule",
+    "text_to_replace": ":geocities_chienboule:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocities/chienboule.gif"
+  },
+  "2": {
+    "title": "geocities_glaceclasse",
+    "text_to_replace": ":geocities_glaceclasse:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocities/glaceclasse.gif"
+  },
+  "3": {
+    "title": "geocities_pouletalabroche",
+    "text_to_replace": ":geocities_pouletalabroche:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocities/pouletalabroche.gif"
+  },
+  "4": {
+    "title": "geocities_tartealatete",
+    "text_to_replace": ":geocities_tartealatete:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocities/tartealatete.gif"
   }
 }
