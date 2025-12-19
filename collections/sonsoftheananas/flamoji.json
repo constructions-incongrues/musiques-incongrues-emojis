@@ -1,430 +1,465 @@
 {
   "0": {
+    "title": "sonsoftheananas_ananacool-144",
+    "text_to_replace": ":sonsoftheananas_ananacool-144:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-144.png"
+  },
+  "1": {
+    "title": "sonsoftheananas_ananacool-196",
+    "text_to_replace": ":sonsoftheananas_ananacool-196:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-196.png"
+  },
+  "2": {
+    "title": "sonsoftheananas_ananacool-256",
+    "text_to_replace": ":sonsoftheananas_ananacool-256:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-256.png"
+  },
+  "3": {
+    "title": "sonsoftheananas_ananacool-48",
+    "text_to_replace": ":sonsoftheananas_ananacool-48:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-48.png"
+  },
+  "4": {
+    "title": "sonsoftheananas_ananacool-512",
+    "text_to_replace": ":sonsoftheananas_ananacool-512:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-512.png"
+  },
+  "5": {
+    "title": "sonsoftheananas_ananacool-72",
+    "text_to_replace": ":sonsoftheananas_ananacool-72:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-72.png"
+  },
+  "6": {
+    "title": "sonsoftheananas_ananacool-96",
+    "text_to_replace": ":sonsoftheananas_ananacool-96:",
+    "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/ananacool-96.png"
+  },
+  "7": {
     "title": "sonsoftheananas_pin-3D",
     "text_to_replace": ":sonsoftheananas_pin-3D:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-3D.gif"
   },
-  "1": {
+  "8": {
     "title": "sonsoftheananas_pin-3D2",
     "text_to_replace": ":sonsoftheananas_pin-3D2:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-3D2.gif"
   },
-  "2": {
+  "9": {
     "title": "sonsoftheananas_pin-acid",
     "text_to_replace": ":sonsoftheananas_pin-acid:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-acid.jpg"
   },
-  "3": {
+  "10": {
     "title": "sonsoftheananas_pin-adolf",
     "text_to_replace": ":sonsoftheananas_pin-adolf:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-adolf.png"
   },
-  "4": {
+  "11": {
     "title": "sonsoftheananas_pin-biere",
     "text_to_replace": ":sonsoftheananas_pin-biere:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-biere.gif"
   },
-  "5": {
+  "12": {
     "title": "sonsoftheananas_pin-bimbim",
     "text_to_replace": ":sonsoftheananas_pin-bimbim:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bimbim.jpg"
   },
-  "6": {
+  "13": {
     "title": "sonsoftheananas_pin-bisou",
     "text_to_replace": ":sonsoftheananas_pin-bisou:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bisou.gif"
   },
-  "7": {
+  "14": {
     "title": "sonsoftheananas_pin-bitnik",
     "text_to_replace": ":sonsoftheananas_pin-bitnik:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bitnik.jpg"
   },
-  "8": {
+  "15": {
     "title": "sonsoftheananas_pin-blink",
     "text_to_replace": ":sonsoftheananas_pin-blink:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-blink.jpg"
   },
-  "9": {
+  "16": {
     "title": "sonsoftheananas_pin-bob-stache",
     "text_to_replace": ":sonsoftheananas_pin-bob-stache:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bob-stache.gif"
   },
-  "10": {
+  "17": {
     "title": "sonsoftheananas_pin-bob",
     "text_to_replace": ":sonsoftheananas_pin-bob:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bob.gif"
   },
-  "11": {
+  "18": {
     "title": "sonsoftheananas_pin-boobs",
     "text_to_replace": ":sonsoftheananas_pin-boobs:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-boobs.gif"
   },
-  "12": {
+  "19": {
     "title": "sonsoftheananas_pin-bouffon",
     "text_to_replace": ":sonsoftheananas_pin-bouffon:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bouffon.png"
   },
-  "13": {
+  "20": {
     "title": "sonsoftheananas_pin-bravo",
     "text_to_replace": ":sonsoftheananas_pin-bravo:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-bravo.gif"
   },
-  "14": {
+  "21": {
     "title": "sonsoftheananas_pin-burp",
     "text_to_replace": ":sonsoftheananas_pin-burp:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-burp.gif"
   },
-  "15": {
+  "22": {
     "title": "sonsoftheananas_pin-cagoule",
     "text_to_replace": ":sonsoftheananas_pin-cagoule:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-cagoule.gif"
   },
-  "16": {
+  "23": {
     "title": "sonsoftheananas_pin-caillasse",
     "text_to_replace": ":sonsoftheananas_pin-caillasse:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-caillasse.png"
   },
-  "17": {
+  "24": {
     "title": "sonsoftheananas_pin-centipede",
     "text_to_replace": ":sonsoftheananas_pin-centipede:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-centipede.gif"
   },
-  "18": {
+  "25": {
     "title": "sonsoftheananas_pin-cerf",
     "text_to_replace": ":sonsoftheananas_pin-cerf:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-cerf.png"
   },
-  "19": {
+  "26": {
     "title": "sonsoftheananas_pin-cold",
     "text_to_replace": ":sonsoftheananas_pin-cold:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-cold.gif"
   },
-  "20": {
+  "27": {
     "title": "sonsoftheananas_pin-colors",
     "text_to_replace": ":sonsoftheananas_pin-colors:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-colors.gif"
   },
-  "21": {
+  "28": {
     "title": "sonsoftheananas_pin-crew",
     "text_to_replace": ":sonsoftheananas_pin-crew:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-crew.gif"
   },
-  "22": {
+  "29": {
     "title": "sonsoftheananas_pin-crotal",
     "text_to_replace": ":sonsoftheananas_pin-crotal:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-crotal.gif"
   },
-  "23": {
+  "30": {
     "title": "sonsoftheananas_pin-cruel",
     "text_to_replace": ":sonsoftheananas_pin-cruel:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-cruel.gif"
   },
-  "24": {
+  "31": {
     "title": "sonsoftheananas_pin-cry",
     "text_to_replace": ":sonsoftheananas_pin-cry:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-cry.gif"
   },
-  "25": {
+  "32": {
     "title": "sonsoftheananas_pin-cthulhu",
     "text_to_replace": ":sonsoftheananas_pin-cthulhu:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-cthulhu.gif"
   },
-  "26": {
+  "33": {
     "title": "sonsoftheananas_pin-devil",
     "text_to_replace": ":sonsoftheananas_pin-devil:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-devil.jpg"
   },
-  "27": {
+  "34": {
     "title": "sonsoftheananas_pin-dodo",
     "text_to_replace": ":sonsoftheananas_pin-dodo:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-dodo.jpg"
   },
-  "28": {
+  "35": {
     "title": "sonsoftheananas_pin-dsk",
     "text_to_replace": ":sonsoftheananas_pin-dsk:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-dsk.gif"
   },
-  "29": {
+  "36": {
     "title": "sonsoftheananas_pin-faya1",
     "text_to_replace": ":sonsoftheananas_pin-faya1:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-faya1.gif"
   },
-  "30": {
+  "37": {
     "title": "sonsoftheananas_pin-faya2",
     "text_to_replace": ":sonsoftheananas_pin-faya2:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-faya2.gif"
   },
-  "31": {
+  "38": {
     "title": "sonsoftheananas_pin-freaky",
     "text_to_replace": ":sonsoftheananas_pin-freaky:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-freaky.gif"
   },
-  "32": {
+  "39": {
     "title": "sonsoftheananas_pin-fukushima",
     "text_to_replace": ":sonsoftheananas_pin-fukushima:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-fukushima.gif"
   },
-  "33": {
+  "40": {
     "title": "sonsoftheananas_pin-funk",
     "text_to_replace": ":sonsoftheananas_pin-funk:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-funk.jpg"
   },
-  "34": {
+  "41": {
     "title": "sonsoftheananas_pin-glasses",
     "text_to_replace": ":sonsoftheananas_pin-glasses:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-glasses.gif"
   },
-  "35": {
+  "42": {
     "title": "sonsoftheananas_pin-globe",
     "text_to_replace": ":sonsoftheananas_pin-globe:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-globe.gif"
   },
-  "36": {
+  "43": {
     "title": "sonsoftheananas_pin-halu",
     "text_to_replace": ":sonsoftheananas_pin-halu:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-halu.gif"
   },
-  "37": {
+  "44": {
     "title": "sonsoftheananas_pin-indian",
     "text_to_replace": ":sonsoftheananas_pin-indian:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-indian.gif"
   },
-  "38": {
+  "45": {
     "title": "sonsoftheananas_pin-jump",
     "text_to_replace": ":sonsoftheananas_pin-jump:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-jump.gif"
   },
-  "39": {
+  "46": {
     "title": "sonsoftheananas_pin-justine",
     "text_to_replace": ":sonsoftheananas_pin-justine:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-justine.png"
   },
-  "40": {
+  "47": {
     "title": "sonsoftheananas_pin-lapin",
     "text_to_replace": ":sonsoftheananas_pin-lapin:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-lapin.gif"
   },
-  "41": {
+  "48": {
     "title": "sonsoftheananas_pin-laught",
     "text_to_replace": ":sonsoftheananas_pin-laught:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-laught.gif"
   },
-  "42": {
+  "49": {
     "title": "sonsoftheananas_pin-like",
     "text_to_replace": ":sonsoftheananas_pin-like:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-like.gif"
   },
-  "43": {
+  "50": {
     "title": "sonsoftheananas_pin-love",
     "text_to_replace": ":sonsoftheananas_pin-love:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-love.gif"
   },
-  "44": {
+  "51": {
     "title": "sonsoftheananas_pin-lucha",
     "text_to_replace": ":sonsoftheananas_pin-lucha:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-lucha.gif"
   },
-  "45": {
+  "52": {
     "title": "sonsoftheananas_pin-mad1",
     "text_to_replace": ":sonsoftheananas_pin-mad1:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-mad1.gif"
   },
-  "46": {
+  "53": {
     "title": "sonsoftheananas_pin-mad2",
     "text_to_replace": ":sonsoftheananas_pin-mad2:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-mad2.gif"
   },
-  "47": {
+  "54": {
     "title": "sonsoftheananas_pin-marin",
     "text_to_replace": ":sonsoftheananas_pin-marin:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-marin.gif"
   },
-  "48": {
+  "55": {
     "title": "sonsoftheananas_pin-mcc",
     "text_to_replace": ":sonsoftheananas_pin-mcc:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-mcc.png"
   },
-  "49": {
+  "56": {
     "title": "sonsoftheananas_pin-medieval",
     "text_to_replace": ":sonsoftheananas_pin-medieval:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-medieval.png"
   },
-  "50": {
+  "57": {
     "title": "sonsoftheananas_pin-milliards",
     "text_to_replace": ":sonsoftheananas_pin-milliards:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-milliards.gif"
   },
-  "51": {
+  "58": {
     "title": "sonsoftheananas_pin-munch",
     "text_to_replace": ":sonsoftheananas_pin-munch:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-munch.gif"
   },
-  "52": {
+  "59": {
     "title": "sonsoftheananas_pin-muscles",
     "text_to_replace": ":sonsoftheananas_pin-muscles:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-muscles.gif"
   },
-  "53": {
+  "60": {
     "title": "sonsoftheananas_pin-mustache",
     "text_to_replace": ":sonsoftheananas_pin-mustache:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-mustache.jpg"
   },
-  "54": {
+  "61": {
     "title": "sonsoftheananas_pin-nerd",
     "text_to_replace": ":sonsoftheananas_pin-nerd:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-nerd.gif"
   },
-  "55": {
+  "62": {
     "title": "sonsoftheananas_pin-neutral",
     "text_to_replace": ":sonsoftheananas_pin-neutral:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-neutral.jpg"
   },
-  "56": {
+  "63": {
     "title": "sonsoftheananas_pin-ninjabite",
     "text_to_replace": ":sonsoftheananas_pin-ninjabite:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-ninjabite.gif"
   },
-  "57": {
+  "64": {
     "title": "sonsoftheananas_pin-oreilles",
     "text_to_replace": ":sonsoftheananas_pin-oreilles:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-oreilles.jpg"
   },
-  "58": {
+  "65": {
     "title": "sonsoftheananas_pin-pepin",
     "text_to_replace": ":sonsoftheananas_pin-pepin:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-pepin.gif"
   },
-  "59": {
+  "66": {
     "title": "sonsoftheananas_pin-pirate",
     "text_to_replace": ":sonsoftheananas_pin-pirate:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-pirate.gif"
   },
-  "60": {
+  "67": {
     "title": "sonsoftheananas_pin-plflplflp",
     "text_to_replace": ":sonsoftheananas_pin-plflplflp:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-plflplflp.gif"
   },
-  "61": {
+  "68": {
     "title": "sonsoftheananas_pin-pumpkin",
     "text_to_replace": ":sonsoftheananas_pin-pumpkin:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-pumpkin.gif"
   },
-  "62": {
+  "69": {
     "title": "sonsoftheananas_pin-pyjama",
     "text_to_replace": ":sonsoftheananas_pin-pyjama:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-pyjama.gif"
   },
-  "63": {
+  "70": {
     "title": "sonsoftheananas_pin-pyramid",
     "text_to_replace": ":sonsoftheananas_pin-pyramid:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-pyramid.jpg"
   },
-  "64": {
+  "71": {
     "title": "sonsoftheananas_pin-rabbin",
     "text_to_replace": ":sonsoftheananas_pin-rabbin:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-rabbin.gif"
   },
-  "65": {
+  "72": {
     "title": "sonsoftheananas_pin-red",
     "text_to_replace": ":sonsoftheananas_pin-red:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-red.gif"
   },
-  "66": {
+  "73": {
     "title": "sonsoftheananas_pin-reverse",
     "text_to_replace": ":sonsoftheananas_pin-reverse:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-reverse.jpg"
   },
-  "67": {
+  "74": {
     "title": "sonsoftheananas_pin-saint",
     "text_to_replace": ":sonsoftheananas_pin-saint:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-saint.gif"
   },
-  "68": {
+  "75": {
     "title": "sonsoftheananas_pin-santa",
     "text_to_replace": ":sonsoftheananas_pin-santa:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-santa.jpg"
   },
-  "69": {
+  "76": {
     "title": "sonsoftheananas_pin-shine",
     "text_to_replace": ":sonsoftheananas_pin-shine:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-shine.gif"
   },
-  "70": {
+  "77": {
     "title": "sonsoftheananas_pin-skull1",
     "text_to_replace": ":sonsoftheananas_pin-skull1:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-skull1.jpg"
   },
-  "71": {
+  "78": {
     "title": "sonsoftheananas_pin-skull2",
     "text_to_replace": ":sonsoftheananas_pin-skull2:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-skull2.gif"
   },
-  "72": {
+  "79": {
     "title": "sonsoftheananas_pin-skull3",
     "text_to_replace": ":sonsoftheananas_pin-skull3:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-skull3.gif"
   },
-  "73": {
+  "80": {
     "title": "sonsoftheananas_pin-social",
     "text_to_replace": ":sonsoftheananas_pin-social:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-social.gif"
   },
-  "74": {
+  "81": {
     "title": "sonsoftheananas_pin-sorel",
     "text_to_replace": ":sonsoftheananas_pin-sorel:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-sorel.gif"
   },
-  "75": {
+  "82": {
     "title": "sonsoftheananas_pin-sort",
     "text_to_replace": ":sonsoftheananas_pin-sort:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-sort.gif"
   },
-  "76": {
+  "83": {
     "title": "sonsoftheananas_pin-sournois",
     "text_to_replace": ":sonsoftheananas_pin-sournois:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-sournois.gif"
   },
-  "77": {
+  "84": {
     "title": "sonsoftheananas_pin-sun",
     "text_to_replace": ":sonsoftheananas_pin-sun:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-sun.gif"
   },
-  "78": {
+  "85": {
     "title": "sonsoftheananas_pin-t",
     "text_to_replace": ":sonsoftheananas_pin-t:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-t.png"
   },
-  "79": {
+  "86": {
     "title": "sonsoftheananas_pin-three",
     "text_to_replace": ":sonsoftheananas_pin-three:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-three.gif"
   },
-  "80": {
+  "87": {
     "title": "sonsoftheananas_pin-uzi",
     "text_to_replace": ":sonsoftheananas_pin-uzi:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-uzi.gif"
   },
-  "81": {
+  "88": {
     "title": "sonsoftheananas_pin-whoomp",
     "text_to_replace": ":sonsoftheananas_pin-whoomp:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-whoomp.jpg"
   },
-  "82": {
+  "89": {
     "title": "sonsoftheananas_pin-worm",
     "text_to_replace": ":sonsoftheananas_pin-worm:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-worm.gif"
   },
-  "83": {
+  "90": {
     "title": "sonsoftheananas_pin-yinyang",
     "text_to_replace": ":sonsoftheananas_pin-yinyang:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-yinyang.gif"
   },
-  "84": {
+  "91": {
     "title": "sonsoftheananas_pin-zombie-1",
     "text_to_replace": ":sonsoftheananas_pin-zombie-1:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-zombie-1.gif"
   },
-  "85": {
+  "92": {
     "title": "sonsoftheananas_pin-zombie",
     "text_to_replace": ":sonsoftheananas_pin-zombie:",
     "path": "https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-zombie.gif"
