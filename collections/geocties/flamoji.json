@@ -1,0 +1,12 @@
+{
+  "0": {
+    "title": "geocties_chienboule",
+    "text_to_replace": ":geocties_chienboule:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocties/chienboule.gif"
+  },
+  "1": {
+    "title": "geocties_tartealatete",
+    "text_to_replace": ":geocties_tartealatete:",
+    "path": "https://emo.musiques-incongrues.net/collections/geocties/tartealatete.gif"
+  }
+}
