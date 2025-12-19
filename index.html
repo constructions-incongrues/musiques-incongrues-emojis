@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiques Incongrues - Collections d'Emojis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .collection {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .collection-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .collection-title {
+            font-size: 1.8rem;
+            color: #667eea;
+            text-transform: capitalize;
+        }
+
+        .collection-count {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .emojis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .emoji-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .emoji-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .emoji-image {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+
+        .emoji-name {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+            word-break: break-word;
+        }
+
+        .emoji-shortcode {
+            font-size: 0.8rem;
+            color: #666;
+            font-family: 'Courier New', monospace;
+            background: #e0e0e0;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+            display: inline-block;
+            word-break: break-all;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.5rem;
+            padding: 3rem;
+        }
+
+        .error {
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .copied-notification {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #51cf66;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateY(100px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .copied-notification.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .emojis-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            .collection {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 Musiques Incongrues Emojis</h1>
+            <p class="subtitle">Collections d'emojis personnalisés pour Flamoji et RocketChat</p>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-collections">-</div>
+                    <div class="stat-label">Collections</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-emojis">-</div>
+                    <div class="stat-label">Emojis</div>
+                </div>
+            </div>
+        </header>
+
+        <div id="collections-container">
+            <div class="loading">Chargement des collections...</div>
+        </div>
+
+        <footer>
+            <p>Généré automatiquement depuis <a href="https://github.com/constructions-incongrues/musiques-incongrues-emojis" target="_blank">GitHub</a></p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Cliquez sur un emoji pour copier son shortcode</p>
+        </footer>
+    </div>
+
+    <div class="copied-notification" id="copied-notification">
+        ✓ Shortcode copié dans le presse-papier !
+    </div>
+
+    <script>
+        // Collections à charger
+        const collections = [
+            'amour', 'ballounes', 'boodlofi', 'boodme', 'discutons',
+            'gargamelle', 'millemilliards', 'n8n', 'otro', 'reactions',
+            'shoboshobo', 'sonsoftheananas', 'zooincongru'
+        ];
+
+        let totalEmojis = 0;
+
+        async function loadCollections() {
+            const container = document.getElementById('collections-container');
+            container.innerHTML = '';
+
+            let loadedCollections = 0;
+
+            for (const collectionName of collections) {
+                try {
+                    const response = await fetch(`collections/${collectionName}/flamoji.json`);
+                    if (!response.ok) continue;
+
+                    const data = await response.json();
+                    const emojiCount = Object.keys(data).length;
+
+                    if (emojiCount === 0) continue;
+
+                    totalEmojis += emojiCount;
+                    loadedCollections++;
+
+                    // Créer la section de collection
+                    const collectionDiv = document.createElement('div');
+                    collectionDiv.className = 'collection';
+
+                    const header = document.createElement('div');
+                    header.className = 'collection-header';
+                    header.innerHTML = `
+                        <h2 class="collection-title">${collectionName}</h2>
+                        <span class="collection-count">${emojiCount} emoji${emojiCount > 1 ? 's' : ''}</span>
+                    `;
+                    collectionDiv.appendChild(header);
+
+                    const grid = document.createElement('div');
+                    grid.className = 'emojis-grid';
+
+                    // Ajouter chaque emoji
+                    Object.values(data).forEach(emoji => {
+                        const card = document.createElement('div');
+                        card.className = 'emoji-card';
+                        card.onclick = () => copyShortcode(emoji.text_to_replace);
+
+                        card.innerHTML = `
+                            <img src="${emoji.path}" alt="${emoji.title}" class="emoji-image" loading="lazy" onerror="this.style.display='none'">
+                            <div class="emoji-name">${emoji.title}</div>
+                            <div class="emoji-shortcode">${emoji.text_to_replace}</div>
+                        `;
+
+                        grid.appendChild(card);
+                    });
+
+                    collectionDiv.appendChild(grid);
+                    container.appendChild(collectionDiv);
+
+                } catch (error) {
+                    console.error(`Erreur lors du chargement de ${collectionName}:`, error);
+                }
+            }
+
+            // Mettre à jour les statistiques
+            document.getElementById('total-collections').textContent = loadedCollections;
+            document.getElementById('total-emojis').textContent = totalEmojis;
+
+            if (loadedCollections === 0) {
+                container.innerHTML = '<div class="error">Aucune collection n\'a pu être chargée.</div>';
+            }
+        }
+
+        function copyShortcode(shortcode) {
+            navigator.clipboard.writeText(shortcode).then(() => {
+                const notification = document.getElementById('copied-notification');
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 2000);
+            }).catch(err => {
+                console.error('Erreur lors de la copie:', err);
+            });
+        }
+
+        // Charger les collections au chargement de la page
+        window.addEventListener('DOMContentLoaded', loadCollections);
+    </script>
+</body>
+</html>
