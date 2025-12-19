@@ -1,4 +1,4 @@
-# Musiques Incongrues Emojis
+# Tronches Incongrues
 
 Générateur de fichiers JSON flamoji et YAML RocketChat pour collections d'emojis personnalisés.
 
