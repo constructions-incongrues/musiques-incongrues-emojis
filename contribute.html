@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribuer - Tronches Incongrues</title>
+    <link rel="icon" type="image/gif" href="https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-halu.gif">
+    <link rel="apple-touch-icon" href="https://emo.musiques-incongrues.net/collections/sonsoftheananas/pin-halu.gif">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: #212529;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: none;
+            color: #212529;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        input[type="text"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #e600e6;
+            outline: none;
+        }
+
+        .help-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 0.4rem;
+        }
+
+        button {
+            background: #e600e6;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(230, 0, 230, 0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #e600e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Retour aux collections</a>
+
+        <header>
+            <h1>Contribuer</h1>
+            <p class="subtitle">Proposer un nouvel emoji incongru</p>
+        </header>
+
+        <div class="form-card">
+            <form id="contribution-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="collection-select">Collection</label>
+                    <select id="collection-select" required onchange="handleCollectionChange()">
+                        <option value="">Choisir une collection...</option>
+                        <option value="new">+ Créer une nouvelle collection</option>
+                    </select>
+                </div>
+
+                <div class="form-group hidden" id="new-collection-group">
+                    <label for="new-collection-name">Nom de la nouvelle collection</label>
+                    <input type="text" id="new-collection-name" placeholder="ex: ma-super-collection" pattern="[a-z0-9-]+" title="Lettres minuscules, chiffres et tirets uniquement">
+                    <div class="help-text">Lettres minuscules, chiffres et tirets uniquement.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="emoji-name">Nom de l'emoji</label>
+                    <input type="text" id="emoji-name" required placeholder="ex: party-parrot" pattern="[a-z0-9-]+" title="Lettres minuscules, chiffres et tirets uniquement">
+                    <div class="help-text">Le nom du fichier sans l'extension. Lettres minuscules, chiffres et tirets uniquement.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Votre nom / pseudo (optionnel)</label>
+                    <input type="text" id="author" placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description / Contexte (optionnel)</label>
+                    <textarea id="description" rows="3" placeholder="D'où vient cet emoji ? Pourquoi est-il incongru ?"></textarea>
+                </div>
+
+                <button type="submit">Continuer vers GitHub →</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>Ce formulaire va pré-remplir une issue GitHub. Vous devrez ensuite glisser-déposer votre image dans l'issue.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Charger les collections au démarrage
+        async function loadCollections() {
+            const select = document.getElementById('collection-select');
+            
+            try {
+                const response = await fetch('collections.json');
+                let collections = [];
+                
+                if (response.ok) {
+                    collections = await response.json();
+                } else {
+                    // Fallback
+                    collections = [
+                        'amour', 'ballounes', 'boodlofi', 'boodme', 'discutons',
+                        'gargamelle', 'geocities', 'millemilliards', 'n8n', 'otro', 'reactions',
+                        'shoboshobo', 'sonsoftheananas', 'zooincongru'
+                    ];
+                }
+
+                collections.sort().forEach(col => {
+                    const option = document.createElement('option');
+                    option.value = col;
+                    option.textContent = col;
+                    // Insérer avant l'option "Nouvelle collection" (qui est la dernière ou avant-dernière)
+                    // Mais ici on append simplement, on triera ou l'option "new" est déjà à la fin ? 
+                    // Ah, l'option "new" est en dur dans le HTML à la fin. 
+                    // On va insérer avant la dernière option.
+                    select.insertBefore(option, select.lastElementChild);
+                });
+            } catch (error) {
+                console.error('Erreur chargement collections:', error);
+            }
+        }
+
+        function handleCollectionChange() {
+            const select = document.getElementById('collection-select');
+            const newColGroup = document.getElementById('new-collection-group');
+            const newColInput = document.getElementById('new-collection-name');
+
+            if (select.value === 'new') {
+                newColGroup.classList.remove('hidden');
+                newColInput.required = true;
+            } else {
+                newColGroup.classList.add('hidden');
+                newColInput.required = false;
+            }
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const select = document.getElementById('collection-select');
+            const newColInput = document.getElementById('new-collection-name');
+            const emojiName = document.getElementById('emoji-name').value;
+            const author = document.getElementById('author').value || 'Anonyme';
+            const description = document.getElementById('description').value;
+
+            let collection = select.value;
+            if (collection === 'new') {
+                collection = newColInput.value;
+            }
+
+            if (!collection || !emojiName) return;
+
+            const title = `[Submission] ${emojiName} for ${collection}`;
+            const body = `**Collection:** ${collection}\n**Emoji Name:** ${emojiName}\n**Author:** ${author}\n\n**Description:**\n${description}\n\n**Image:**\n(Please drag and drop your image here)`;
+
+            const url = `https://github.com/constructions-incongrues/musiques-incongrues-emojis/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+
+            window.open(url, '_blank');
+        }
+
+        window.addEventListener('DOMContentLoaded', loadCollections);
+    </script>
+</body>
+</html>
